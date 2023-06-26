@@ -2,4 +2,4 @@
 	<s:Boolean x:Key="/Default/CodeInspection/Highlighting/ImportVsSquiggles/@EntryValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/Debugger/PredictiveDebugger232/PredictiveDebuggerButtonReversed/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Debugger/PredictiveDebugger232/PredictiveDebuggerEnabled/@EntryValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/Environment/Editor/QuickInfo/EnableQuickInfo/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/Environment/Editor/QuickInfo/EnableQuickInfo/@EntryValue">False</s:Boolean></wpf:ResourceDictionary>
