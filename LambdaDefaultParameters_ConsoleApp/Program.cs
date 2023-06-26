@@ -1,4 +1,10 @@
-﻿const int myParameter = 1;
+﻿var d = (int x = 10) => x;
+// Then
+d = (int y = 20) => y;
+var i = d();
+
+
+const int myParameter = 1;
 var simpleLambda = (int x) => x;
 
 var simpleLambda2 = simpleLambda(1);

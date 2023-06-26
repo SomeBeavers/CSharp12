@@ -8,4 +8,8 @@
     <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LambdaDefaultParameters_Lib\LambdaDefaultParameters_Lib.csproj" />
+  </ItemGroup>
+
 </Project>
