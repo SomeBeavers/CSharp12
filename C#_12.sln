@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.33808.371
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp_net8", "ConsoleApp_net8\ConsoleApp_net8.csproj", "{F648706E-0D8C-49C3-A57F-43E99C2F04DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp_net8", "ConsoleApp_net8\ConsoleApp_net8.csproj", "{F648706E-0D8C-49C3-A57F-43E99C2F04DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lambda default parameters", "Lambda default parameters", "{2BAD0765-1858-4094-9CFD-6A2930F06357}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_ConsoleApp", "LambdaDefaultParameters_ConsoleApp\LambdaDefaultParameters_ConsoleApp.csproj", "{7DCC47F7-3C57-4C38-BE57-9CD43A292963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDefaultParameters_ConsoleApp", "LambdaDefaultParameters_ConsoleApp\LambdaDefaultParameters_ConsoleApp.csproj", "{7DCC47F7-3C57-4C38-BE57-9CD43A292963}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDefaultParameter_OldLanguageVersion", "LambdaDefaultParameter_OldLanguageVersion\LambdaDefaultParameter_OldLanguageVersion.csproj", "{8B2AC765-D972-4139-8D14-F98C92D3F66C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_Framework", "LambdaDefaultParameters_Framework\LambdaDefaultParameters_Framework.csproj", "{040E3568-5169-4421-8143-3F3D8B28A017}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDefaultParameters_Multi", "LambdaDefaultParameters_Multi\LambdaDefaultParameters_Multi.csproj", "{0C71C69D-F2AA-48DE-A9BA-08F070C9B65F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_Blazor", "LambdaDefaultParameters_Blazor\LambdaDefaultParameters_Blazor.csproj", "{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_Lib", "LambdaDefaultParameters_Lib\LambdaDefaultParameters_Lib.csproj", "{76F03BC5-3076-40B6-A85F-8D4533C98A1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +33,37 @@ Global
 		{7DCC47F7-3C57-4C38-BE57-9CD43A292963}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DCC47F7-3C57-4C38-BE57-9CD43A292963}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DCC47F7-3C57-4C38-BE57-9CD43A292963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2AC765-D972-4139-8D14-F98C92D3F66C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2AC765-D972-4139-8D14-F98C92D3F66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2AC765-D972-4139-8D14-F98C92D3F66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2AC765-D972-4139-8D14-F98C92D3F66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{040E3568-5169-4421-8143-3F3D8B28A017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040E3568-5169-4421-8143-3F3D8B28A017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040E3568-5169-4421-8143-3F3D8B28A017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040E3568-5169-4421-8143-3F3D8B28A017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C71C69D-F2AA-48DE-A9BA-08F070C9B65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C71C69D-F2AA-48DE-A9BA-08F070C9B65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C71C69D-F2AA-48DE-A9BA-08F070C9B65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C71C69D-F2AA-48DE-A9BA-08F070C9B65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F03BC5-3076-40B6-A85F-8D4533C98A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F03BC5-3076-40B6-A85F-8D4533C98A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F03BC5-3076-40B6-A85F-8D4533C98A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F03BC5-3076-40B6-A85F-8D4533C98A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7DCC47F7-3C57-4C38-BE57-9CD43A292963} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
+		{8B2AC765-D972-4139-8D14-F98C92D3F66C} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
+		{040E3568-5169-4421-8143-3F3D8B28A017} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
+		{0C71C69D-F2AA-48DE-A9BA-08F070C9B65F} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
+		{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
+		{76F03BC5-3076-40B6-A85F-8D4533C98A1A} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37DF41B4-95BA-45E5-8EDC-EFFF490901CC}

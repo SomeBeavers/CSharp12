@@ -13,10 +13,12 @@ var myLambda = (int x = 1) =>
     return x + 1;
 };
 
-Console.WriteLine(myLambda());
+Console.WriteLine(myLambda()); 
 Console.WriteLine(myLambda(1));
 Console.WriteLine(myLambda(arg: 2));
 Console.WriteLine(myLambda(3));
+
+var defaultValue = myLambda.Method.GetParameters()[0].DefaultValue;
 
 
 var myLambdaWithParams = (params int[] myParams) => myParams[1].ToString();
