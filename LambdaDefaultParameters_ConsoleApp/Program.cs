@@ -1,12 +1,62 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿const int myParameter = 1;
+var simpleLambda = (int x) => x;
 
-const int myParameter = 1;
+var simpleLambda2 = simpleLambda(1);
 
-var myLambda = (int x = myParameter) => x + 1;
+Console.WriteLine(simpleLambda2);
+Console.WriteLine(simpleLambda(2));
 
-void Test(int x = myParameter)
+
+var myLambda = (int x = 1) =>
 {
+    x = 2;
+    return x + 1;
+};
+
+Console.WriteLine(myLambda());
+Console.WriteLine(myLambda(1));
+Console.WriteLine(myLambda(arg: 2));
+Console.WriteLine(myLambda(3));
+
+
+var myLambdaWithParams = (params int[] myParams) => myParams[1].ToString();
+
+string s = "";
+
+int Test(int x = myParameter)
+{
+    x = 2;
+    return x + 1;
 }
 
-Console.WriteLine(myLambda);
+
+
+//Console.WriteLine(myLambdaWithParams());
+Console.WriteLine(myLambdaWithParams(1,2,3,4));
+Console.WriteLine(myLambdaWithParams(arg: new[] { 1, 2, 3, 4 }));
+
+var addWithDefault = (int addTo = 2) => addTo + 1;
+addWithDefault(); // 3
+addWithDefault(5); // 6
+
+var counter = (params int[] xs) => xs.Length;
+counter(); // 0
+counter(1, 2, 3); // 
+
+var addWithDefault2 = AddWithDefaultMethod;
+addWithDefault2(); // 3
+addWithDefault2(5); // 6
+
+var counter2 = CountMethod;
+counter2(); // 0
+counter2(1, 2); // 2
+
+int AddWithDefaultMethod(int addTo = 2)
+{
+    return addTo + 1;
+}
+int CountMethod(params int[] xs)
+{
+    return xs.Length;
+}
+
