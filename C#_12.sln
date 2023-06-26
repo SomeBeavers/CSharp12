@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.33808.371
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp_net8", "ConsoleApp_net8\ConsoleApp_net8.csproj", "{F648706E-0D8C-49C3-A57F-43E99C2F04DB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lambda default parameters", "Lambda default parameters", "{2BAD0765-1858-4094-9CFD-6A2930F06357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_ConsoleApp", "LambdaDefaultParameters_ConsoleApp\LambdaDefaultParameters_ConsoleApp.csproj", "{7DCC47F7-3C57-4C38-BE57-9CD43A292963}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{F648706E-0D8C-49C3-A57F-43E99C2F04DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F648706E-0D8C-49C3-A57F-43E99C2F04DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F648706E-0D8C-49C3-A57F-43E99C2F04DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DCC47F7-3C57-4C38-BE57-9CD43A292963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DCC47F7-3C57-4C38-BE57-9CD43A292963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DCC47F7-3C57-4C38-BE57-9CD43A292963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DCC47F7-3C57-4C38-BE57-9CD43A292963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DCC47F7-3C57-4C38-BE57-9CD43A292963} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37DF41B4-95BA-45E5-8EDC-EFFF490901CC}
