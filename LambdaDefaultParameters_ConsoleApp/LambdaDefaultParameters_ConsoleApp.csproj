@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LambdaDefaultParameters_Lib\LambdaDefaultParameters_Lib.csproj" />
+    <PackageReference Include="LambdaDefaultParameters_Lib" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

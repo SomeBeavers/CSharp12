@@ -59,6 +59,43 @@ var counter2 = CountMethod;
 counter2(); // 0
 counter2(1, 2); // 2
 
+
+var list = new List<A>()
+{
+    new()
+    {
+        Name = "1",
+        Age = 1
+    },
+    new()
+    {
+        Name = "2",
+        Age = 2
+    },
+    new()
+    {
+        Name = "3",
+        Age = 3
+    },
+    new()
+    {
+        Name = "4",
+        Age = 4
+    },
+    new()
+    {
+        Name = "5",
+        Age = 5
+    }
+};
+
+var list1 = list.Where(x => x.Age > 3)
+    .Where((A x = default) => x.Name == "5")
+    .Select(x => x.Name)
+    .ToList();
+
+Console.WriteLine("Hello World!");
+
 int AddWithDefaultMethod(int addTo = 2)
 {
     return addTo + 1;
@@ -66,5 +103,11 @@ int AddWithDefaultMethod(int addTo = 2)
 int CountMethod(params int[] xs)
 {
     return xs.Length;
+}
+
+public class A
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
 }
 
