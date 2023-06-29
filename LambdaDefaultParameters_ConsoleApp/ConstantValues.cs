@@ -37,11 +37,14 @@ public class ConstantValues
 
     public void Test2()
     {
+        const int One = 1;
+        Span<int> span = new[] { One }; // This would not compile in C# 8.0 and earlier
+
         var d = D;
 
         var lambda2 = (string s = $"""
                                    string: {myS}
-                                   bool:{true}
+                                   bool:{"true"}
                                    """) => { };
     }
 
@@ -50,6 +53,11 @@ public class ConstantValues
     private void D(int i = 1)
     {
         throw new NotImplementedException();
+    }
+
+    public void Test3()
+    {
+        var lambda1 = (dynamic d = null!) => { };
     }
 }
 
