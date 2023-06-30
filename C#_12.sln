@@ -15,9 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_Fra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDefaultParameters_Multi", "LambdaDefaultParameters_Multi\LambdaDefaultParameters_Multi.csproj", "{0C71C69D-F2AA-48DE-A9BA-08F070C9B65F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_Blazor", "LambdaDefaultParameters_Blazor\LambdaDefaultParameters_Blazor.csproj", "{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDefaultParameters_Blazor", "LambdaDefaultParameters_Blazor\LambdaDefaultParameters_Blazor.csproj", "{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_Lib", "LambdaDefaultParameters_Lib\LambdaDefaultParameters_Lib.csproj", "{76F03BC5-3076-40B6-A85F-8D4533C98A1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaDefaultParameters_Lib", "LambdaDefaultParameters_Lib\LambdaDefaultParameters_Lib.csproj", "{76F03BC5-3076-40B6-A85F-8D4533C98A1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaDefaultParameters_AspNet", "LambdaDefaultParameters_AspNet\LambdaDefaultParameters_AspNet.csproj", "{7BDF3D81-111B-464D-941C-AA86BCEF4809}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{76F03BC5-3076-40B6-A85F-8D4533C98A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76F03BC5-3076-40B6-A85F-8D4533C98A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76F03BC5-3076-40B6-A85F-8D4533C98A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BDF3D81-111B-464D-941C-AA86BCEF4809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BDF3D81-111B-464D-941C-AA86BCEF4809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BDF3D81-111B-464D-941C-AA86BCEF4809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BDF3D81-111B-464D-941C-AA86BCEF4809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{0C71C69D-F2AA-48DE-A9BA-08F070C9B65F} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
 		{776E7F87-15D9-44B7-8BF6-E5A8E421DA1A} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
 		{76F03BC5-3076-40B6-A85F-8D4533C98A1A} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
+		{7BDF3D81-111B-464D-941C-AA86BCEF4809} = {2BAD0765-1858-4094-9CFD-6A2930F06357}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37DF41B4-95BA-45E5-8EDC-EFFF490901CC}
