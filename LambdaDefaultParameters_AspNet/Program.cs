@@ -16,17 +16,17 @@ app.MapGet("/", (TodoDb db) =>
     db.SaveChanges();
     return "Hello World!";
 });
-app.MapGet("/todoitems", async (TodoDb db, int id = 1) =>
-{
-    Console.WriteLine($"id: {id}");
-    return await db.Todos.ToListAsync();
-});
+//app.MapGet("/todoitems", async (TodoDb db, int id = 1) =>
+//{
+//    Console.WriteLine($"id: {id}");
+//    return await db.Todos.ToListAsync();
+//});
 
 //app.MapGet("/todoitems/complete", async (TodoDb db) =>
 //    await db.Todos.Where(t => t.IsComplete).ToListAsync());
 
 
-app.MapGet("/todoitem/{id}", async (TodoDb db, int id = 1) =>
+app.MapGet("/todoitem/{id?}", async (TodoDb db, int id = 1) =>
 {
     Console.WriteLine($"id: {id}");
     var todo = await db.Todos.FindAsync(id);
@@ -38,17 +38,17 @@ app.MapGet("/todoitem/{id}", async (TodoDb db, int id = 1) =>
     return $"TODO with id = {id} is not found.";
 });
 
-app.MapGet("/todoitem", async (TodoDb db, int id = 1) =>
-{
-    Console.WriteLine($"id: {id}");
-    var todo = await db.Todos.FindAsync(id);
-    if (todo is not null)
-    {
-        return todo?.Name;
-    }
+//app.MapGet("/todoitem", async (TodoDb db, int id = 1) =>
+//{
+//    Console.WriteLine($"id: {id}");
+//    var todo = await db.Todos.FindAsync(id);
+//    if (todo is not null)
+//    {
+//        return todo?.Name;
+//    }
 
-    return $"TODO with id = {id} is not found.";
-});
+//    return $"TODO with id = {id} is not found.";
+//});
 
 //app.MapPost("/todoitems", async (Todo todo, TodoDb db) =>
 //{
