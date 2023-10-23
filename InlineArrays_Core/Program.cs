@@ -1,5 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using InlineArrays_CoreLib;using InlineArrays_Nuget;
+﻿using InlineArrays_CoreLib;using InlineArrays_Nuget;
 
 Console.WriteLine("Hello, World!");
 var point = new Point();
