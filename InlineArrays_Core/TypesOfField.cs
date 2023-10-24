@@ -52,13 +52,29 @@ public class TypesOfField<T>
 	}
 
 	[InlineArray(11)]
-	public struct MyEnumStruct
+	public ref struct MyEnumStruct
 	{
-		GenericStruct<MyEnum>? _enumField;
+		ARef _enumField;
 	}
 
-	public GenericStruct<MyEnum>? Test3(MyEnumStruct myEnumStruct)
+	[InlineArray(10)]
+	public ref struct ARef
 	{
-		return myEnumStruct[1];
+		public ref int T;
+	}
+
+	[InlineArray(10)]
+	public struct MyStruct4
+	{
+		dynamic _enumField;
+		delegate void MyDelegate();
+	}
+
+	public IEnumerable<dynamic> Test4(MyStruct4 myStruct4)
+	{
+		foreach (dynamic a in myStruct4)
+		{
+			yield return a;
+		}
 	}
 }
