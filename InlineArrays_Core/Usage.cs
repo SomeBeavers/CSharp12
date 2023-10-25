@@ -28,9 +28,54 @@ public class Usage<T, U> where T : struct where U : class
 		ref var o3 = ref usageStruct[1];
 		ref readonly var o4 = ref usageStruct[0];
 
+		var typeStruct10 = usageStruct[..1];
+	}
 
+	public async Task AsyncMethod()
+	{
+		var usageStruct = await GetStruct();
+
+		 foreach (var typeStruct in usageStruct)
+		{
+			
+		}
+	}
+
+	private async Task<UsageStruct<TypeStruct>> GetStruct()
+	{
+		await Task.Delay(100);
+
+		return new UsageStruct<TypeStruct>();
 	}
 }
+
+class C
+{
+	public Buffer10<int> F;
+}
+
+class Program
+{
+	static void Main()
+	{
+		var x = new C();
+		System.Console.Write(M1(x));
+		M2(x);
+		System.Console.Write(' ');
+		System.Console.Write(M1(x));
+	}
+
+	static int M1(C  x) => x.F[0];
+	static void M2(C x) => x.F[0] = 111;
+}
+
+[System.Runtime.CompilerServices.InlineArray(10)]
+public struct Buffer10<T>
+{
+	private T _element0;
+
+}
+
 
 [InlineArray(10)]
 public struct UsageStruct<T> where T : struct
@@ -50,3 +95,4 @@ public struct DynamicStruct
 {
 	private dynamic _dynamicField;
 }
+
