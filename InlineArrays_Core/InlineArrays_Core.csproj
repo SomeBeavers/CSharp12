@@ -17,4 +17,8 @@
     <ProjectReference Include="..\InlineArrays_CoreLib\InlineArrays_CoreLib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Play\" />
+  </ItemGroup>
+
 </Project>

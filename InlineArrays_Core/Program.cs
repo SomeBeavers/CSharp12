@@ -1,6 +1,9 @@
 ﻿using InlineArrays_CoreLib;using InlineArrays_Nuget;
 
+
 Console.WriteLine("Hello, World!");
+int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+var i1 = arr[1];
 var point = new Point();
 var i = point[1];
 
