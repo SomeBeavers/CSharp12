@@ -8,17 +8,17 @@ public class ScopeCheck
     }
 }
 
-public class ScopeCheckClass(string firstName)
+public class ScopeCheckClass(string @event)
 {
     public string GetName(string surname)
     {
-        return $"{firstName} {surname}";
+        return $"{@event} {surname}";
     }
 
 
-    public string FirstName { get; set; } = firstName;
+    public string FirstName { get; set; } = @event;
 
-    public string FirstNameField = firstName;
+    public string FirstNameField = @event;
 }
 
 public class Derived : Base

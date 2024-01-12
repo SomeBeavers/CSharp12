@@ -6,4 +6,9 @@ struct MyStruct;
 
 interface IMyInterface;
 
-enum MyEnum;
+public enum MyEnum
+{
+    Value1,
+    Value2,
+    Value3
+}
