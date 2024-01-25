@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multi", "Multi\Multi.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineArrays_CoreLib", "InlineArrays_CoreLib\InlineArrays_CoreLib.csproj", "{2FDC5C49-810A-4AF7-AF70-869D5587A6FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InlineArrays_Nuget", "InlineArrays_Nuget\InlineArrays_Nuget.csproj", "{B1EE26E3-FAF5-4C56-A702-0BD9E669215B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineArrays_Nuget", "InlineArrays_Nuget\InlineArrays_Nuget.csproj", "{B1EE26E3-FAF5-4C56-A702-0BD9E669215B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineArrays_Run", "InlineArrays_Run\InlineArrays_Run.csproj", "{0E717F45-5A1A-49F8-8F84-E56E746C1644}"
 EndProject
@@ -49,7 +49,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimaryConstructors_Nuget",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Collection Expression", "Collection Expression", "{74E5DBD9-2121-4C14-8C26-B0EF7C3A34B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionExpression_App", "CollectionExpression_App\CollectionExpression_App.csproj", "{C5A836C2-64CA-4521-900C-B80EFFC79418}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionExpression_App", "CollectionExpression_App\CollectionExpression_App.csproj", "{C5A836C2-64CA-4521-900C-B80EFFC79418}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B683560-DBC2-4BC4-BBF2-42535CBD3AE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectReference", "ProjectReference\ProjectReference.csproj", "{29370D4C-6436-4678-9753-4F9F56863212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionExpression_Framework", "CollectionExpression_Framework\CollectionExpression_Framework.csproj", "{FBB1E484-C1EA-4B82-832F-21FFBF5F9FBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionExpression_Multi", "CollectionExpression_Multi\CollectionExpression_Multi.csproj", "{CEE4F90D-3623-40BC-A93A-02DD1546A7A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionExpression_Nuget", "CollectionExpression_Nuget\CollectionExpression_Nuget.csproj", "{A486819C-2FF7-4737-900D-DB20CEBB2925}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -137,6 +147,22 @@ Global
 		{C5A836C2-64CA-4521-900C-B80EFFC79418}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5A836C2-64CA-4521-900C-B80EFFC79418}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5A836C2-64CA-4521-900C-B80EFFC79418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29370D4C-6436-4678-9753-4F9F56863212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29370D4C-6436-4678-9753-4F9F56863212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29370D4C-6436-4678-9753-4F9F56863212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29370D4C-6436-4678-9753-4F9F56863212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB1E484-C1EA-4B82-832F-21FFBF5F9FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB1E484-C1EA-4B82-832F-21FFBF5F9FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB1E484-C1EA-4B82-832F-21FFBF5F9FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB1E484-C1EA-4B82-832F-21FFBF5F9FBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE4F90D-3623-40BC-A93A-02DD1546A7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE4F90D-3623-40BC-A93A-02DD1546A7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE4F90D-3623-40BC-A93A-02DD1546A7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE4F90D-3623-40BC-A93A-02DD1546A7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A486819C-2FF7-4737-900D-DB20CEBB2925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A486819C-2FF7-4737-900D-DB20CEBB2925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A486819C-2FF7-4737-900D-DB20CEBB2925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A486819C-2FF7-4737-900D-DB20CEBB2925}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -161,6 +187,11 @@ Global
 		{D40DC8D1-EF6C-403E-979B-5C94E9DDCEF2} = {EA980103-497E-4B11-A1E5-DE3081AACE86}
 		{159DE8A8-2EFB-48FF-ADDF-5951872D5C9B} = {EA980103-497E-4B11-A1E5-DE3081AACE86}
 		{C5A836C2-64CA-4521-900C-B80EFFC79418} = {74E5DBD9-2121-4C14-8C26-B0EF7C3A34B8}
+		{3B683560-DBC2-4BC4-BBF2-42535CBD3AE0} = {74E5DBD9-2121-4C14-8C26-B0EF7C3A34B8}
+		{29370D4C-6436-4678-9753-4F9F56863212} = {3B683560-DBC2-4BC4-BBF2-42535CBD3AE0}
+		{FBB1E484-C1EA-4B82-832F-21FFBF5F9FBB} = {74E5DBD9-2121-4C14-8C26-B0EF7C3A34B8}
+		{CEE4F90D-3623-40BC-A93A-02DD1546A7A6} = {74E5DBD9-2121-4C14-8C26-B0EF7C3A34B8}
+		{A486819C-2FF7-4737-900D-DB20CEBB2925} = {74E5DBD9-2121-4C14-8C26-B0EF7C3A34B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37DF41B4-95BA-45E5-8EDC-EFFF490901CC}
