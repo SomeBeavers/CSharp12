@@ -17,4 +17,8 @@
     <ProjectReference Include="..\ProjectReference\ProjectReference.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CodeElement\" />
+  </ItemGroup>
+
 </Project>
