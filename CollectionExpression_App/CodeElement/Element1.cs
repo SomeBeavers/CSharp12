@@ -27,12 +27,19 @@ public class Element1
 			[(UserDefinedTypeBase)userDefinedType2, UserDefinedType, userDefinedBase];
 		UserDefinedTypeBase[] userDefinedList2 =
 		[
-			..userDefinedList, /*..const1,*/ userDefinedBase, /*..null,*/
+			..userDefinedList[1..2], /*..const1,*/ userDefinedBase, /*..null,*/
 			..new[] { new UserDefinedType() }, ..new List<UserDefinedTypeBase>(), ..new UserDefinedTypeBase[] { }
 		];
-		UserDefinedType[] userDefinedList4 = { };
+		UserDefinedType[] userDefinedList4 = [];
 		var userDefinedList3 = userDefinedList2;
+		
+
+		// TODO: collection
+
+		var foo = new []{ new List<string> { "" }.Where(x => x.Length == 1) };
+		string[] s = [.. new List<string> { "" }.Where(x => x.Length == 1)];
 	}
+
 }
 
 internal class MyClassS
