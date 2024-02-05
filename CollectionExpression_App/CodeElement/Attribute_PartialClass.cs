@@ -16,13 +16,13 @@ namespace CollectionExpression_App.CodeElement
             List<int> list = [1, 2, 3];
 
             NewClass cNewClass = [new Pet()];
-            InClass1 class1 = [new Pet()];
+            //InClass1 class1 = [new Pet()];
 
             List<int> list1 = (List<int>)[1,2,3];
 
-            CustCollection custCollection = (CustCollection)[1,2];
+           // CustCollection custCollection = (CustCollection)[1,2];
 
-            NewCollection collection = [];
+            //NewCollection collection = [];
         }
 
     }
