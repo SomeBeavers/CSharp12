@@ -50,7 +50,7 @@ public class UseGeneric2<T> where T : BaseT, new()
 
     public void Test2()
     {
-        List<T> list = new() { (T)new BaseT(), new Bat() as T, (T)new BaseTBase(), new BaseTImpl() };
+        //List<T> list = new() { (T)new BaseT(), new Bat() as T, (T)new BaseTBase(), new BaseTImpl() };
         List<string> list2 = new() { "dfsd", "sf" };
     }
 
