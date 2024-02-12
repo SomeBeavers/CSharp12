@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            List<int> list = new List<int> { 1, 2, 3 };
+            List<int> ints = [1, 2, 3];
+            
         }
     }
 }

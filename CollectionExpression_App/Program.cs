@@ -11,8 +11,9 @@ using CollectionExpression_App.CodeElement;
 
 string? s = null;
 List<string> list2 = [s];
-ClassStruct classStruct = [new Pet(), new Pet()];
-Console.WriteLine(classStruct.name);
+//ClassStruct classStruct = [new Pet(), new Pet()];
+//Console.WriteLine(classStruct.name);
+Console.WriteLine(list2);
 
 public class RefClass
 {
