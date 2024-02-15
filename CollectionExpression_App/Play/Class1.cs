@@ -78,7 +78,7 @@ class Program11
 			long s = l;
 		}
 
-		MyCollection x1 = [3, 2];
+		//MyCollection x1 = [3, 2];
 		MyCollection x2 = new MyCollection();
 		List<int> x3 = new List<int>();
 	}
