@@ -35,7 +35,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineArrays_Nuget", "Inlin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineArrays_Run", "InlineArrays_Run\InlineArrays_Run.csproj", "{0E717F45-5A1A-49F8-8F84-E56E746C1644}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Primary constructors", "Primary constructors", "{EA980103-497E-4B11-A1E5-DE3081AACE86}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Primary constructors (outdated)", "Primary constructors (outdated)", "{EA980103-497E-4B11-A1E5-DE3081AACE86}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimaryConstructors_ConsoleApp", "PrimaryConstructors_ConsoleApp\PrimaryConstructors_ConsoleApp.csproj", "{74E7A0FD-270B-4938-BA7D-27C2343DF1AB}"
 EndProject
@@ -57,7 +57,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectReference", "Project
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionExpression_Framework", "CollectionExpression_Framework\CollectionExpression_Framework.csproj", "{FBB1E484-C1EA-4B82-832F-21FFBF5F9FBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionExpression_Multi", "CollectionExpression_Multi\CollectionExpression_Multi.csproj", "{CEE4F90D-3623-40BC-A93A-02DD1546A7A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionExpression_Multi", "CollectionExpression_Multi\CollectionExpression_Multi.csproj", "{CEE4F90D-3623-40BC-A93A-02DD1546A7A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionExpression_Nuget", "CollectionExpression_Nuget\CollectionExpression_Nuget.csproj", "{A486819C-2FF7-4737-900D-DB20CEBB2925}"
 EndProject
