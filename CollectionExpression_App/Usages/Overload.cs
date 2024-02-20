@@ -26,7 +26,27 @@ public class Overload
 
     class C2
     {
+        static void Generic<T>(Span<T> value) { }
+        static void Generic<T>(T[]     value) { }
 
+        static void SpanDerived(Span<string> value) { }
+        static void SpanDerived(object[]     value) { }
+
+        static void ArrayDerived(Span<object> value) { }
+        static void ArrayDerived(string[]     value) { }
+
+        public void Test2()
+        {
+            // Array initializers
+            Generic(new[] { "" });      // string[]
+            //SpanDerived(new[] { "" });  // ambiguous
+            ArrayDerived(new[] { "" }); // string[]
+
+            // Collection expressions
+            Generic([""]);              // Span<string>
+            SpanDerived([""]);          // Span<string>
+            //ArrayDerived([""]);         // ambiguous
+        }
         public static void M1(char[] x)
         {
         }
