@@ -18,13 +18,13 @@ public class Collection
 
     public void Test(short t1, MyClass myClass)
     {
+        var foo = new[] { new List<string> { "" }.Where(x => x.EndsWith('d')) };
         ImmutableArray<string> list =
         [
-            ..s, string.Empty, ..new string[] { }, ..new[] { "dhf", "fg" },
-            ..new List<string> { "de", "ewewef" }.Select(x => x.ToUpper()).Where(c => c.EndsWith('f')),
+            ..new string[] { }, string.Empty, ..s, ..new List<string> { "ewewef", "de" }.Select(x => x.ToUpper()).Where(c => c.EndsWith('f')),
+            ..new[] { "dhf", "fg" },
             .. ((string[]) [.. s])[1..]
         ];
-        var foo = new[] { new List<string> { "" }.Where(x => x.EndsWith('d')) };
         var l = new List<string> { "de", "ewewef"}.Select(x => x.ToUpper()).Where(c => c.EndsWith('f'));
         MyCollection element = [];
         MyCollection collection = [new MyClass(), ..element[1..3], element[0], ..new MyCollection(), ..new MyClass[5], new MyClass
@@ -34,7 +34,7 @@ public class Collection
             }
         ];
         List<string> list3 = [myClass.Name, ..myClass.List, myClass.List.FirstOrDefault(), myClass.ToString() ?? string.Empty];
-        List<string> list4 = new() { myClass.Name, myClass.List.FirstOrDefault(), };
+        List<string> list4 = new() { myClass.List.FirstOrDefault(), myClass.Name, };
         List<MyCollection> list2 = new List<MyCollection>() { new MyCollection()};
     }
 }
@@ -45,6 +45,11 @@ public class Test
     {
         List<string> list3 = [myClass.Name, .. myClass.List, myClass.List.FirstOrDefault(),];
         List<string> list4 = new() { myClass.Name, myClass.List.FirstOrDefault(), };
+    }
+
+    public void Test2()
+    {
+
     }
 }
 
